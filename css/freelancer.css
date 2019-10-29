@@ -103,10 +103,11 @@ section h2 {
   line-height: 3.1rem;
 }
 
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-weight: 700;
+  /*font-weight: 700;*/
   font-family: 'Montserrat';
 }
 
@@ -133,7 +134,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color:black;
+  color:#18BC9C;
   /* ??? */
 }
 
@@ -149,10 +150,14 @@ section h2 {
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
+  #kineNav{
+    font-size: 0.8em;
+  }
   #mainNav .navbar-brand {/*navbar texte gauche*/
     font-size: 1,5em;
     -webkit-transition: font-size 0.3s;
     transition: font-size 0.3s;
+    text-align: center;
   }
   #mainNav .navbar-nav {
     margin-top: 0;
@@ -176,7 +181,15 @@ section h2 {
   }
 }
 
-header.masthead {
+header{
+  background-image: url("../img/kine.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+f.masthead {
   padding-top: calc(6rem + 72px);
   padding-bottom: 6rem;
 }
@@ -352,11 +365,12 @@ a:focus, a:hover, a:active {
 }
 
 .bg-primary {
-  background-color: rgb(8,206,200) !important;
+  background-color: #18BC9C !important;
+  /*rgb(8,206,200)*/
 }
 
 .bg-secondary {
-  background-color:rgb(43,46,137) !important;
+  background-color: rgb(43,46,137) !important;
 }
 
 .text-primary {
@@ -386,3 +400,4 @@ a:focus, a:hover, a:active {
   background-color: #1a252f;
   border-color: #1a252f;
 }
+
