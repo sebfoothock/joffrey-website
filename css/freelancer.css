@@ -129,12 +129,13 @@ section h2 {
   /*hover élément barre de nav*/
 }
 
-#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+#mainNav .navbar-nav li.nav-item a.nav-link:active,
+#mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color:#18BC9C;
+  color: #18BC9C;
   /* ??? */
 }
 
@@ -150,43 +151,61 @@ section h2 {
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
-  #kineNav{
+
+  #kineNav {
     font-size: 0.8em;
   }
-  #mainNav .navbar-brand {/*navbar texte gauche*/
-    font-size: 1,5em;
+
+  #mainNav .navbar-brand {
+    /*navbar texte gauche*/
+    font-size: 1, 5em;
     -webkit-transition: font-size 0.3s;
     transition: font-size 0.3s;
     text-align: center;
   }
+
   #mainNav .navbar-nav {
     margin-top: 0;
   }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+
+  #mainNav .navbar-nav>li.nav-item>a.nav-link.active {
     color: #fff;
-    background:#18BC9C;
-    /* cadre vert lors de glissement vers la zone défini*/
+    background: #18BC9C;/* cadre vert lors de glissement vers la zone défini*/
   }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+
+  #mainNav .navbar-nav>li.nav-item>a.nav-link.active:active,
+  #mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus,
+  #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover {
     color: #fff;
     background: #18BC9C;
     /* cadre vert défini la zone ou on est */
   }
+
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
+
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.5em;
   }
 }
 
-header{
+header {
   background-image: url("../img/kine.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 800px;
+}
+
+.vertical-center {/*header*/
+  min-height: 100%;/* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;/* These two lines are counted as one :-) */
+
+  display: flex;
+  align-items: center;
 }
 
 f.masthead {
@@ -209,10 +228,12 @@ header.masthead h2 {
     padding-top: calc(6rem + 106px);
     padding-bottom: 6rem;
   }
+
   header.masthead h1 {
     font-size: 4.75em;
     line-height: 4rem;
   }
+
   header.masthead h2 {
     font-size: 2em;
   }
@@ -287,7 +308,9 @@ a {
   color: #18BC9C;
 }
 
-a:focus, a:hover, a:active {
+a:focus,
+a:hover,
+a:active {
   color: #128f76;
 }
 
@@ -301,7 +324,7 @@ a:focus, a:hover, a:active {
 }
 
 .bg-secondary {
-  background-color: rgb(43,46,137) !important;
+  background-color: rgb(43, 46, 137) !important;
 }
 
 .text-primary {
@@ -317,7 +340,9 @@ a:focus, a:hover, a:active {
   border-color: #18BC9C;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
   background-color: #128f76;
   border-color: #128f76;
 }
@@ -327,8 +352,9 @@ a:focus, a:hover, a:active {
   border-color: #2C3E50;
 }
 
-.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
   background-color: #1a252f;
   border-color: #1a252f;
 }
-
