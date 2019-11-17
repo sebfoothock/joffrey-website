@@ -18,6 +18,7 @@
   <link href="css/freelancer.min.css" rel="stylesheet">
   <link href="css/freelancer.css" rel="stylesheet">
   <link rel="icon" href="img/icon.png"> <!-- href="img/avatars.png" -->
+
 </head>
 
 
@@ -205,10 +206,7 @@
       </div>
 
       <!-- acces Section Maps -->
-      <div id="map">
-      </div>
-
-
+      <div id="map"></div>
     </div>
   </section>
 
@@ -340,7 +338,6 @@
 
   <!-- Maps -->
   <script>
-    // Map options
     var map;
 
     function initMap() {
@@ -349,14 +346,13 @@
           lat: 50.838387,
           lng: 4.391600
         },
-        zoom: 10
+        zoom: 15
       }
       map = new google.maps.Map(document.getElementById('map'), options);
     }
   </script>
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDw0nbVOT1mV6ZCwsJ7hMhFfBE9ge0zxjY&callback=initMap">
-    // "https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
   </script>
 
 </body>
