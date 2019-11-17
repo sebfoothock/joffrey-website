@@ -272,8 +272,8 @@ header.masthead h2 {
   margin: 0;
   -webkit-transition: top 0.3s ease, opacity 0.3s ease;
   transition: top 0.3s ease, opacity 0.3s ease;
-  vertical-align: middle;
-  vertical-align: baseline;
+  /* vertical-align: middle;
+  vertical-align: baseline; */
   opacity: 0;
 }
 
@@ -342,6 +342,12 @@ a:active {
   border-color: #18bc9c;
 }
 
+.text-info {
+  color: #212529 !important;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
@@ -359,4 +365,9 @@ a:active {
 .btn-secondary:active {
   background-color: #1a252f;
   border-color: #1a252f;
+}
+
+#maps {
+  height: 500px;
+  widows: 50%;
 }

@@ -17,10 +17,7 @@
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
   <link href="css/freelancer.css" rel="stylesheet">
-
   <link rel="icon" href="img/icon.png"> <!-- href="img/avatars.png" -->
-
-
 </head>
 
 
@@ -142,26 +139,22 @@
       <h2 class="page-section-heading text-center text-uppercase text-white">Infos pratiques</h2>
 
       <!-- info Section Content -->
-      <div class="col-md-4 text-left text-white">
-        <p class="lead">Les consultations se font sur rendez-vous.</p>
-        <br>
-        <p class="lead">Lors de votre première séance, n'oubliez pas d'apporter :
-          <ul>
-            <li>votre prescription médicale (valide 3 mois)</li>
-            <li>une vignette mutuelle</li>
-            <li>si vous en avez, vos imageries médicales et leurs protocoles.</li>
+      <div class="row justify-content-md-center">
+        <div class="col-md-8 text-center text-white">
+          <br>
+          <p class="lead">Les consultations se font sur rendez-vous.</p>
+          <br>
+          <p class="lead ">Lors de votre première séance, n'oubliez pas d'apporter :</p>
+        </div>
+        <div class="col-md-7 text-center">
+          <ul class="lead text-white">
+            <li class="text-left">votre prescription médicale (valide 3 mois)</li>
+            <li class="text-left">une vignette mutuelle</li>
+            <li class="text-left">si vous en avez, vos imageries médicales et leurs protocoles.</li>
           </ul>
-        </p>
+          <h3>Pas de bancontact</h3>
+        </div>
       </div>
-
-      <!-- info Section Button -->
-      <div class="text-center mt-4">
-        <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
-          <i class="fas fa-download mr-2"></i>
-          Free Download!
-        </a>
-      </div>
-
     </div>
   </section>
 
@@ -197,32 +190,24 @@
   </section>
 
   <!-- Accès Section -->
-  <section class="page-section mb-0 bg-primary" id="acces">
+  <section class="page-section mb-0 bg-primary text-white" id="acces">
     <div class="container">
 
       <!-- acces Section Heading -->
       <h2 class="page-section-heading text-center text-uppercase text-white">Accès</h2>
 
       <!-- acces Section Content -->
-      <div class="row text-white">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the
-            complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy
-            customization.</p>
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and
-            add your email address to the contact form to make it fully functional!</p>
+      <div class="row justify-content-md-center">
+        <div clas="col-md-7">
+          <br>
+          <p class="lead text-info">Avenue des Nerviens 111 – 1040 Etterbeek</p>
         </div>
       </div>
 
-      <!-- acces Section Button -->
-      <div class="text-center mt-4">
-        <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
-          <i class="fas fa-download mr-2"></i>
-          Free Download!
-        </a>
+      <!-- acces Section Maps -->
+      <div id="map">
       </div>
+
 
     </div>
   </section>
@@ -232,16 +217,7 @@
     <div class="container">
 
       <!-- Contact Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0 ">Contact Me</h2>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
+      <h2 class="page-section-heading text-center text-uppercase mb-0 ">Contact Me</h2>
 
       <!-- Contact Section Form -->
       <div class="row">
@@ -250,6 +226,7 @@
           <form name="sentMessage" id="contactForm" novalidate="novalidate">
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2 text-white">
+                <br>
                 <label>Name</label>
                 <input class="form-control" id="name" type="text" placeholder="Name" required="required"
                   data-validation-required-message="Please enter your name.">
@@ -360,6 +337,27 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+
+  <!-- Maps -->
+  <script>
+    // Map options
+    var map;
+
+    function initMap() {
+      var options = {
+        center: {
+          lat: 50.838387,
+          lng: 4.391600
+        },
+        zoom: 10
+      }
+      map = new google.maps.Map(document.getElementById('map'), options);
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDw0nbVOT1mV6ZCwsJ7hMhFfBE9ge0zxjY&callback=initMap">
+    // "https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+  </script>
 
 </body>
 
