@@ -98,7 +98,7 @@
       <h2 class="page-section-heading text-center text-uppercase mb-0 text-white">Accueil</h2>
       <br>
       <div class="row justify-content-md-center">
-        <div class="col-md-9 text-left">
+        <div class="col-md-9 text-center">
           <p class="lead text-white">
             Je vous accueil au cabinet des Nerviens, situé à Etterbeek le long du Cinquantenaire. Le cabinet comporte
             des ostéopathes et des Kinésithérapeutes.<br><br> Mes domaines de prédilection sont la rhumatologie,
@@ -119,15 +119,55 @@
   </section>
 
   <!-- horraire Section -->
-  <section class="page-section mb-0" id="horaire">
+  <section class="page-section mb-0 " id="horaire">
     <div class="container">
 
       <!-- horaire Section Heading -->
       <h2 class="page-section-heading text-center text-uppercase">horaire</h2>
 
       <!-- horaire Section Content -->
-      <div class="row">
-
+      <br>
+      <div class="row justify-content-md-center">
+        <div class="col-md-8">
+          <table id="tab">
+            <thead>
+              <tr>
+                <th scope="col">Jour</th>
+                <th scope="col">Heure</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="absent">
+                <td>Lundi</td>
+                <td>Fermé</td>
+              </tr>
+              <tr class="libre">
+                <td>Mardi</td>
+                <td>13:30-18:30</td>
+              </tr>
+              <tr class="absent">
+                <td>Mecredi</td>
+                <td>Fermé</td>
+              </tr>
+              <tr class="libre">
+                <td>Jeudi</td>
+                <td>13:30-18:30</td>
+              </tr>
+              <tr class="absent">
+                <td>Vendredi</td>
+                <td>Fermé</td>
+              </tr>
+              <tr class="absent">
+                <td>Samedi</td>
+                <td>Fermé</td>
+              </tr>
+              <tr class="absent">
+                <td>Dimanche</td>
+                <td>Fermé</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </section>
@@ -147,12 +187,13 @@
           <br>
           <p class="lead ">Lors de votre première séance, n'oubliez pas d'apporter :</p>
         </div>
-        <div class="col-md-7 text-center">
+        <div class="col-md-5 text-center">
           <ul class="lead text-white">
             <li class="text-left">votre prescription médicale (valide 3 mois)</li>
             <li class="text-left">une vignette mutuelle</li>
             <li class="text-left">si vous en avez, vos imageries médicales et leurs protocoles.</li>
           </ul>
+          <br>
           <h3>Pas de bancontact</h3>
         </div>
       </div>
@@ -169,29 +210,15 @@
       <!-- tarif Section Content -->
       <div class="row">
         <div class="col-lg-4 ml-auto">
-          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the
-            complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy
-            customization.</p>
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and
-            add your email address to the contact form to make it fully functional!</p>
-        </div>
-      </div>
 
-      <!-- tarif Section Button -->
-      <div class="text-center mt-4">
-        <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
-          <i class="fas fa-download mr-2"></i>
-          Free Download!
-        </a>
+        </div>
       </div>
 
     </div>
   </section>
 
   <!-- Accès Section -->
-  <section class="page-section mb-0 bg-primary text-white" id="acces">
+  <section class="page-section mb-0 bg-primary text-white text-center" id="acces">
     <div class="container">
 
       <!-- acces Section Heading -->
@@ -199,15 +226,26 @@
 
       <!-- acces Section Content -->
       <div class="row justify-content-md-center">
-        <div clas="col-md-7">
+        <div clas="col-md-7 text-center">
           <br>
           <p class="lead text-info">Avenue des Nerviens 111 – 1040 Etterbeek</p>
         </div>
       </div>
 
       <!-- acces Section Maps -->
-      <div id="map"></div>
-    </div>
+      <img src="img/maps.png" alt="maps" class="text-center">
+
+      <!-- acces Section Content -->
+      <div class="row justify-content-md-center">
+        <div clas="col-md-7 text-center">
+          <br>
+          <p class="lead">1 min à pied de l'arrêt Gaulois (Bus 27 et 80)</p>
+          <p class="lead">5 min à pied de l'arrêt Leman (Bus 36)</p>
+          <p class="lead">8 min à pied de Mérode (Bus 61, Tram 81 et Métro 1 et 5)</p>
+          <p class="lead text-info">Parking autour du cabinet payant</p>
+        </div>
+      </div>
+
   </section>
 
   <!-- Contact Section -->
@@ -335,25 +373,6 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
-
-  <!-- Maps -->
-  <script>
-    var map;
-
-    function initMap() {
-      var options = {
-        center: {
-          lat: 50.838387,
-          lng: 4.391600
-        },
-        zoom: 15
-      }
-      map = new google.maps.Map(document.getElementById('map'), options);
-    }
-  </script>
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDw0nbVOT1mV6ZCwsJ7hMhFfBE9ge0zxjY&callback=initMap">
-  </script>
 
 </body>
 

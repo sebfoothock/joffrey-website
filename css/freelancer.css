@@ -167,15 +167,15 @@ section h2 {
     margin-top: 0;
   }
 
-  #mainNav .navbar-nav>li.nav-item>a.nav-link.active {
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
     background: #18bc9c;
     /* cadre vert lors de glissement vers la zone défini*/
   }
 
-  #mainNav .navbar-nav>li.nav-item>a.nav-link.active:active,
-  #mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus,
-  #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover {
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
     background: #18bc9c;
     /* cadre vert défini la zone ou on est */
@@ -198,7 +198,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-
 }
 
 .center {
@@ -367,7 +366,36 @@ a:active {
   border-color: #1a252f;
 }
 
-#map {
+img {
   height: 500px;
   widows: 50%;
+}
+
+table {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  background: #2b2e89;
+  color: #18bc9c;
+}
+
+td,
+th {
+  text-align: center;
+  width: 50%;
+}
+
+td {
+  color: white;
+}
+
+.libre {
+  background-color: #18bc9c;
+}
+
+.absent {
+  background-color: red;
 }
