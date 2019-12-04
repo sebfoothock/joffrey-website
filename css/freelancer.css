@@ -4,6 +4,12 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Lato";
 }
@@ -14,8 +20,9 @@ h3,
 h4,
 h5,
 h6 {
-  /*font-weight: 700;*/
+  font-weight: 700;
   font-family: "Montserrat";
+  width: auto;
 }
 
 hr.star-light,
@@ -167,15 +174,15 @@ section h2 {
     margin-top: 0;
   }
 
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+  #mainNav .navbar-nav>li.nav-item>a.nav-link.active {
     color: #fff;
     background: #18bc9c;
     /* cadre vert lors de glissement vers la zone défini*/
   }
 
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active,
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+  #mainNav .navbar-nav>li.nav-item>a.nav-link.active:active,
+  #mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus,
+  #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover {
     color: #fff;
     background: #18bc9c;
     /* cadre vert défini la zone ou on est */
@@ -367,14 +374,34 @@ a:active {
 }
 
 img {
-  height: 500px;
-  widows: 50%;
+  height: 25vh;
 }
 
 table {
-  width: 400px;
+  width: 40vw;
+  height: 15vh;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* top-left border-radius */
+table tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+
+/* top-right border-radius */
+table tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+
+/* bottom-left border-radius */
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+/* bottom-right border-radius */
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
 }
 
 th {
@@ -386,6 +413,7 @@ td,
 th {
   text-align: center;
   width: 50%;
+  border: 1px solid white;
 }
 
 td {
@@ -398,4 +426,28 @@ td {
 
 .absent {
   background-color: red;
+}
+
+@media (orientation: landscape) {
+  img {
+    /* width: 70%;
+    height: 70%; */
+    width: 70vw;
+    height: 70vh;
+  }
+}
+
+@media all and (max-width: 600px) {
+  table {
+    width: 50vw;
+    height: 50vh;
+  }
+
+  .masthead-heading {
+    font-size: 1em;
+  }
+
+  #mainNav .navbar-collapse {
+    padding: 0 20px 0 0;
+  }
 }

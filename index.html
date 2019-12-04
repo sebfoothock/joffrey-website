@@ -69,24 +69,27 @@
   </nav>
 
   <!-- Masthead -->
-  <header class="masthead bg-primary text-secondary text-center">
+  <header class="masthead bg-primary text-secondary">
     <div class="container center">
+      <div class="row justify-content-md-center">
+        <div class="col-md-7">
 
-      <!-- Masthead Heading -->
-      <h1 class="masthead-heading text-uppercase">Kinésithérapie</h1>
+          <!-- Masthead Heading -->
+          <h1 class="masthead-heading text-uppercase text-center">Kinésithérapie</h1>
 
-      <!-- Icon Divider -->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
+          <!-- Icon Divider -->
+          <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="divider-custom-line"></div>
+          </div>
+
+          <!-- Masthead Subheading -->
+          <p class="masthead-subheading font-weight-light mb-0 text-center">Thérapie Manuelle</p>
         </div>
-        <div class="divider-custom-line"></div>
       </div>
-
-      <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0">Thérapie Manuelle</p>
-
     </div>
   </header>
 
@@ -127,9 +130,9 @@
 
       <!-- horaire Section Content -->
       <br>
-      <div class="row justify-content-md-center">
+      <div id="tab" class="row justify-content-md-center">
         <div class="col-md-8">
-          <table id="tab">
+          <table>
             <thead>
               <tr>
                 <th scope="col">Jour</th>
@@ -226,7 +229,7 @@
 
       <!-- acces Section Content -->
       <div class="row justify-content-md-center">
-        <div clas="col-md-7 text-center">
+        <div class="col-md-7 text-center">
           <br>
           <p class="lead text-info">Avenue des Nerviens 111 – 1040 Etterbeek</p>
         </div>
@@ -237,7 +240,7 @@
 
       <!-- acces Section Content -->
       <div class="row justify-content-md-center">
-        <div clas="col-md-7 text-center">
+        <div class="col-md-7">
           <br>
           <p class="lead">1 min à pied de l'arrêt Gaulois (Bus 27 et 80)</p>
           <p class="lead">5 min à pied de l'arrêt Leman (Bus 36)</p>
@@ -348,7 +351,10 @@
   <!-- Copyright Section -->
   <section class="copyright py-4 text-center text-white">
     <div class="container">
-      <small>Copyright &copy; Your Website 2019</small>
+      <small> &copy; Copyright <a href="https://www.linkedin.com/in/sébastien-raemdonck-87a864182/">Sébastien
+          Raemdonck</a>
+        | Website <span id="year"></span>
+      </small>
     </div>
   </section>
 
@@ -373,6 +379,10 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
 
 </body>
 
