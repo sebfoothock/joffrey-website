@@ -404,20 +404,15 @@ table tr:last-child td:last-child {
   border-bottom-right-radius: 10px;
 }
 
-th {
-  background: #2b2e89;
-  color: #18bc9c;
-}
 
 td,
 th {
   text-align: center;
   width: 50%;
-  border: 1px solid white;
 }
 
 td {
-  color: white;
+  color: black;
 }
 
 .libre {
@@ -425,7 +420,12 @@ td {
 }
 
 .absent {
-  background-color: red;
+  background-color: rgba(211, 211, 211, 0.918);
+}
+
+
+footer {
+  margin: 30px;
 }
 
 @media (orientation: landscape) {
@@ -449,5 +449,10 @@ td {
 
   #mainNav .navbar-collapse {
     padding: 0 20px 0 0;
+  }
+
+  footer {
+    margin: 0px;
+    padding: 0px;
   }
 }
