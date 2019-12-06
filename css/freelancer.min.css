@@ -10823,14 +10823,6 @@ a.text-dark:hover {
     padding-bottom: 6rem
 }
 
-.masthead .masthead-heading {
-    font-size: 2rem;
-}
-
-.masthead .masthead-subheading {
-    font-size: 1.25rem
-}
-
 .masthead .masthead-avatar {
     width: 15rem
 }
@@ -10841,14 +10833,6 @@ a.text-dark:hover {
         padding-bottom: 6rem
     }
 
-    .masthead .masthead-heading {
-        font-size: 4rem;
-        line-height: 3.5rem
-    }
-
-    .masthead .masthead-subheading {
-        font-size: 1.5rem
-    }
 }
 
 .floating-label-form-group {

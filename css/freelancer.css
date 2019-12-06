@@ -222,14 +222,9 @@ f.masthead {
   padding-bottom: 6rem;
 }
 
-header.masthead h1 {
+header.masthead {
   font-size: 3rem;
   line-height: 3rem;
-}
-
-header.masthead h2 {
-  font-size: 1.3rem;
-  font-family: "Lato";
 }
 
 @media (min-width: 992px) {
@@ -239,7 +234,7 @@ header.masthead h2 {
   }
 
   header.masthead h1 {
-    font-size: 4.75em;
+    font-size: 1.5em;
     line-height: 4rem;
   }
 
@@ -350,7 +345,7 @@ a:active {
 
 .text-info {
   color: #212529 !important;
-  font-size: 1.7em;
+  font-size: 2em;
   font-weight: bold;
 }
 
@@ -420,12 +415,24 @@ td {
 }
 
 .absent {
-  background-color: rgba(211, 211, 211, 0.918);
+  background-color: rgba(233, 231, 231, 0.973);
 }
 
+hr {
+  border: 2px solid #2C3E50;
+  border-radius: 5px;
+}
 
-footer {
-  margin: 30px;
+h1 {
+  margin: 50px;
+}
+
+.titre {
+  margin-top: 75px;
+}
+
+.navbar-nav {
+  float: left;
 }
 
 @media (orientation: landscape) {
@@ -451,8 +458,4 @@ footer {
     padding: 0 20px 0 0;
   }
 
-  footer {
-    margin: 0px;
-    padding: 0px;
-  }
 }
