@@ -450,8 +450,9 @@ h1 {
     height: 50vh;
   }
 
-  .masthead-heading {
-    font-size: 1em;
+  h1 {
+    font-size: 0.65em;
+    text-align: center;
   }
 
   #mainNav .navbar-collapse {
