@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Lato";
 }
@@ -174,15 +178,15 @@ section h2 {
     margin-top: 0;
   }
 
-  #mainNav .navbar-nav>li.nav-item>a.nav-link.active {
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
     background: #18bc9c;
     /* cadre vert lors de glissement vers la zone défini*/
   }
 
-  #mainNav .navbar-nav>li.nav-item>a.nav-link.active:active,
-  #mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus,
-  #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover {
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
     background: #18bc9c;
     /* cadre vert défini la zone ou on est */
@@ -369,7 +373,7 @@ a:active {
 }
 
 img {
-  height: 25vh;
+  height: 80vh;
 }
 
 table {
@@ -399,7 +403,6 @@ table tr:last-child td:last-child {
   border-bottom-right-radius: 10px;
 }
 
-
 td,
 th {
   text-align: center;
@@ -419,7 +422,7 @@ td {
 }
 
 hr {
-  border: 2px solid #2C3E50;
+  border: 2px solid #2c3e50;
   border-radius: 5px;
 }
 
@@ -436,11 +439,20 @@ h1 {
 }
 
 @media (orientation: landscape) {
-  img {
-    /* width: 70%;
-    height: 70%; */
-    width: 70vw;
-    height: 70vh;
+  @media all and (max-width: 1200px) {
+    img {
+      width: 70vw;
+      height: auto;
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  @media all and (max-width: 1200px) {
+    img {
+      width: 90vw;
+      height: auto;
+    }
   }
 }
 
@@ -459,4 +471,7 @@ h1 {
     padding: 0 20px 0 0;
   }
 
+  .text-info {
+    font-size: 25px;
+  }
 }
